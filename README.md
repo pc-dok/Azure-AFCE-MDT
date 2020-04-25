@@ -10,7 +10,7 @@ tenant_id = "---"
 ```
 
 ##### Steps to initialize this project
-- Enter/edit all the variables in variable file (terraform.tfvars and variables.tf)
+- Enter/edit all the variables in variable file (terraform.tfvars and variables.tf, vpn.tf and main.tf)
 - Add storage account , container name , Access Key at the end of file for storing terraform state file remotely to azure (you need to have a already created storage account for storing the state file )
 
 Run following commands to run & test Terraform scripts :
