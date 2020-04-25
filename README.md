@@ -21,6 +21,7 @@ Install a VM with Windows Server 2019 / with Managed Disk - Premium LRS and MDT
 Applications:
 
 sql-server-management-studio
+
 notepadplusplus
 foxitreader
 ms-edge
