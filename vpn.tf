@@ -55,7 +55,7 @@ resource "azurerm_virtual_network_gateway_connection" "VPNGW_S2S_CONN" {
   type                       = "IPsec"
   virtual_network_gateway_id = azurerm_virtual_network_gateway.vpn-gateway.id
   local_network_gateway_id   = azurerm_local_network_gateway.On-Premises.id
-  shared_key = "2vSzUTMsUXx5sJrn69TW8hBKguUoKWwN0tVoHgSKFN3sMVg8ZQJUwBESymGCzQBM"
+  shared_key = "yoursharedsecret"
   tags = {
     CON = "for S2S Gateway Connection - N4K - AF LAB"
   }
