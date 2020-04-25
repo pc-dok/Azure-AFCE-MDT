@@ -49,13 +49,13 @@ variable "storlrssmb" {
 
 variable "active_directory_domain" {
   type        = string
-  default     = "uac.local"
+  default     = "lab.local"
   description = "The name of the Active Directory domain, for example `consoto.local`"
 }
 
 variable "your-public_ip" {
   type        = string
-  default     = "212.77.44.165"
+  default     = "1.1.1.1"
   description = "Your Public IP"
 }
 
@@ -74,42 +74,6 @@ variable "azdvops2" {
   type        = string
   default     = "vsrvazwe-mdt-01"
   description = "Azure Dev OPS VM for MDT - Windows Server 2019"
-}
-
-variable "azdvops3" {
-  type        = string
-  default     = "vsrvazwe-jvm-03"
-  description = "Azure Dev OPS VM for IAC with Windows 10 - Version 17134.706.71"
-}
-
-variable "azdvops4" {
-  type        = string
-  default     = "vsrvazwe-jvm-04"
-  description = "Azure Dev OPS VM for IAC with Windows 10 -  Version 17763.437.71"
-}
-
-variable "win10-Offer" {
-  type        = string
-  default     = "Windows-10"
-  description = "Offer Windows 10"
-}
-
-variable "win10-Publisher" {
-  type        = string
-  default     = "MicrosoftWindowsDesktop"
-  description = "Publisher Windows 10"
-}
-
-variable "win10-SKU-RS4" {
-  type        = string
-  default     = "rs4-pro"
-  description = "SKU Windows 10 - rs4-pro - Version 17134.706.71"
-}
-
-variable "win10-SKU-RS5" {
-  type        = string
-  default     = "rs5-pro"
-  description = "SKU Windows 10 - rs5-pro - Version 17763.437.71"
 }
 
 variable "Windows-Server-Offer" {
@@ -136,54 +100,6 @@ variable "W2K19" {
   description = "Windows Server 2019 Datacenter"
 }
 
-variable "SQL1" {
-  type        = string
-  default     = "kfrdemo-test-dev-we-sql-001"
-  description = "Azure SQL Single Instance 1"
-}
-
-variable "SQL2" {
-  type        = string
-  default     = "kfrdemo-test-dev-we-sql-002"
-  description = "Azure SQL Single Instance 2"
-}
-
-variable "SQL31" {
-  type        = string
-  default     = "kfrdemo-test-dev-we-sql-003"
-  description = "Azure SQL Single Instance 3"
-}
-
-variable "SQL2FO1" {
-  type        = string
-  default     = "kfrdemo-test-dev-we-sql-004"
-  description = "Azure Failover SQL Instance 1"
-}
-
-variable "SQL2FO2" {
-  type        = string
-  default     = "kfrdemo-test-dev-ne-sql-004"
-  description = "Azure Failover SQL Instance 2"
-}
-
-variable "SQLDB1" {
-  type        = string
-  default     = "kfrdemo-test-dev-we-sqldb-001"
-  description = "Azure Failover SQL Database 1"
-}
-
-variable "SQLDB2" {
-  type        = string
-  default     = "kfrdemo-test-dev-ne-sqldb-001"
-  description = "Azure Failover SQL Database 1"
-}
-
-variable "SQL3" {
-  type        = string
-  default     = "kfrdemo-test-dev-we-sqlmi-001"
-  description = "Azure Managed SQL Instance"
-}
-
 #Variables for terraform.tfvars file
 variable "regions" {
   type        = list(string)
@@ -193,22 +109,22 @@ variable "regions" {
 
 variable "admin_username" {
   type        = string
-  default     = "ctxadmin"
+  default     = "admin"
 }
 
 variable "admin_password" {
   type        = string
-  default     = "ChangeMe@Passw0rd"
+  default     = "Passw0rd"
 }
 
 variable "administrator_login" {
   type        = string
-  default     = "ctxadmin"
+  default     = "admin"
 }
 
 variable "administrator_login_password" {
   type        = string
-  default     = "ChangeMe@Passw0rd"
+  default     = "Passw0rd"
 }
 
 #Variables for Tags
