@@ -3,10 +3,10 @@
  Setup you private Azure creds before running the script :
 
 ```
-subscription_id 	= "---"
-client_id 		    = "---"
-client_secret 	  = "---"
-tenant_id 		    = "---"
+subscription_id = "---"
+client_id = "---"
+client_secret = "---"
+tenant_id = "---"
 ```
 
 ##### Steps to initialize this project
