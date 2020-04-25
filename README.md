@@ -1,6 +1,9 @@
 Creator: fkoenig@n4k
+
 Date: 20200425
+
 Shareable: yes / notice Passwords in .tfvars file only for Demo Purposes
+
 Example for Create a DEMO LAB with Azure and Deploy than a Citrix LAB with MDT
 
 Ressource Group - Create first all needed Azure Ressources what needed for our LAB
