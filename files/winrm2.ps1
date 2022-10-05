@@ -21,6 +21,11 @@ netsh advfirewall firewall add rule name="Windows Remote Management (HTTPS-In)" 
 Invoke-Expression ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1')) 
 choco install notepadplusplus foxitreader 7zip -y
 
+#Add Windows Features for Administrate than AADDS with this Client
+Add-WindowsFeature "RSAT-AD-Tools"
+Add-WindowsFeature -Name "dns" -IncludeAllSubFeature -IncludeManagementTools
+Add-WindowsFeature -Name "gpmc" -IncludeAllSubFeature -IncludeManagementTools
+
 Write-Verbose "Disable IE Security" -Verbose
 reg add "HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" /v IsInstalled /t REG_DWORD /d 0 /f
 reg add "HKLM\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" /v IsInstalled /t REG_DWORD /d 0 /f
